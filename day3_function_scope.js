@@ -141,13 +141,13 @@ let checkEven = (num) =>{
         return true;
     } else{
         return false;
-    }
+}
 }
 console.log(checkEven(258));
 
 // Convert Celsius to Fahrenheit
 function convertCtoF(celsius){
-    let fahrenheit = (celsius * 9/5) + 32;
+let fahrenheit = (celsius * 9/5) + 32;
     return fahrenheit;
 }
 convertCtoF(0); // 32
