@@ -13,6 +13,7 @@ console.log(arr) // [2,3,4,5,6]
 arr.unshift(8);
 console.log(arr); // [8,2,3,4,5,6]
 
+
 const marks = [45, 67, 33, 89, 90, 55, 21];
 
 // filter to get marks >=50
