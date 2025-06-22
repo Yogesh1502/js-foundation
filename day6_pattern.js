@@ -33,11 +33,11 @@ for (let i = 0; i < row; i++) {
     console.log(str);
 }
 
-let row = 4;
-for (let i = 0; i < row; i++) {
-   let str = 0;
+let count = 1
+for (let i = 0; i < 5; i++) {
+   let str = "";
     for (let j = 0; j < i+1; j++){
-        str+=1 + " ";
+        str+=count++ + "  ";
     }
     console.log(str);
 }
@@ -54,7 +54,16 @@ function factorial(num) {
 console.log(factorial(4));
 
 // check if num is prime
-
+function isPrime(num) {
+    if (num < 1)
+        return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i == 0)
+            return false;
+    }
+    return true;
+}
+console.log(isPrime(31));
 
 // all even num between 1 to 100
 let str = " ";
@@ -62,7 +71,7 @@ for (let i = 0; i < 100; i++) {
     if(i%2==0){
         str+=i + " ";
     }
-} 
+}
 console.log(str);
 
 // multiplication of a num
